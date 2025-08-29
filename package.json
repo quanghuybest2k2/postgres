@@ -1,0 +1,26 @@
+{
+    "name": "best_practice",
+    "author": {
+        "name": "Doan Quang Huy",
+        "email": "quanghuybest@gmail.com"
+    },
+    "description": "A REST API for a best practice e-commerce application",
+    "keywords": [
+        "API",
+        "best practices",
+        "PostgreSQL"
+    ],
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "start": "node index.js",
+        "dev": "nodemon index.js"
+    },
+    "dependencies": {
+        "cors": "^2.8.5",
+        "dotenv": "^17.2.1",
+        "express": "^5.1.0",
+        "nodemon": "^3.1.10",
+        "pg": "^8.16.3"
+    }
+}
