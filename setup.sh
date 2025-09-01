@@ -15,6 +15,12 @@ then
     exit 1
 fi
 
+echo "=== Checking for .env file ==="
+if [ ! -f ".env" ]; then
+    echo "📄 .env not found, copying from .env.example"
+    cp .env.example .env
+fi
+
 echo "=== Running docker compose up -d --build with up to $MAX_RETRIES retries ==="
 
 until [ $COUNT -ge $MAX_RETRIES ]

@@ -14,17 +14,11 @@ It includes a helper script (`setup.sh`) that retries up to 3 times if starting 
 
 ## ⚙️ Setup
 
-1. Copy `.env.example` to `.env`
-
-```bash
-cp .env.example .env
-```
-
-2. Make the script executable:
+1. Make the script executable:
    ```bash
    chmod +x setup.sh
    ```
-3. Run the script:
+2. Run the script:
 
    ```bash
    ./setup.sh
